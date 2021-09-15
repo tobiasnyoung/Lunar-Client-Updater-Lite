@@ -1,0 +1,8 @@
+https://optifine.net/download?f=OptiFine_1.7.10_HD_U_E7.jar
+https://optifine.net/download?f=preview_OptiFine_1.8.9_HD_U_M6_pre1.jar
+https://optifine.net/download?f=preview_OptiFine_1.12.2_HD_U_G6_pre1.jar
+https://optifine.net/download?f=OptiFine_1.16.5_HD_U_G8.jar
+https://optifine.net/download?f=OptiFine_1.17.1_HD_U_G9.jar
+
+https://launcherlicenses.lunarclientcdn.com/ReplayMod.md
+https://launcherlicenses.lunarclientcdn.com/Blur.md
