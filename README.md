@@ -1,4 +1,4 @@
-# Lunar-Client-Updater-Lite
+# Lunar Client Updater Lite
 A lightweight Lunar Client Installer + Updater for LC `1.8`.
 
 # Usage
