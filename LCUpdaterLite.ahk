@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -9,7 +9,7 @@ EnvGet, vHomePath, HOMEPATH
 UserProfile=% vHomeDrive vHomePath
 ;Index URLs
 
-Arguments := ["-Download", "-UpdateIndex"]
+Arguments := ["-Download", "-UpdateIndex", "-UpdateIndexLT"]
 for n, param in A_Args  ; For each parameter:
 {
 	
@@ -18,7 +18,7 @@ for n, param in A_Args  ; For each parameter:
 	
 	If (param = "-Download"){
 		IfNotExist, Index.txt
-			URLDownloadToFile, https://raw.githubusercontent.com/Aetopia/Lunar-Client-Updater-Lite/main/Index.txt, Index.txt
+			URLDownloadToFile, https://raw.githubusercontent.com/Aetopia/Lunar-Client-Updater-Lite/main/LCIndex.txt, Index.txt
 		
 		FileReadLine, vpatcher, Index.txt, 1
 		FileReadLine, lunarprodoptifine, Index.txt, 2
@@ -92,12 +92,20 @@ for n, param in A_Args  ; For each parameter:
 		
 	}
 
-	If (param = "-UpdateIndex"){
+	If (param = "-UpdateIndexLT"){
 		FileDelete, Index.txt
 		URLDownloadToFile, https://raw.githubusercontent.com/Aetopia/Lunar-Client-Updater-Lite/main/Index.txt, Index.txt
-		MsgBox, 64, Index Updated, Downloaded the latest index from Lunar Client Updater Lite's GitHub Repository., 2
+		MsgBox, 64, Index Updated, Downloaded the latest index for Lunar Tweaks from Lunar Client Updater Lite's GitHub Repository., 2
+		ExitApp
 	}
-}	
+	
+	If (param = "-UpdateIndex") {
+		FileDelete, Index.txt
+		URLDownloadToFile, https://raw.githubusercontent.com/Aetopia/Lunar-Client-Updater-Lite/main/LCIndex.txt, Index.txt
+		MsgBox, 64, Index Updated, Downloaded the latest index from Lunar Client Updater Lite's GitHub Repository., 2
+		ExitApp
+	}	
+}
 
 GuiClose(){
 	ExitApp
