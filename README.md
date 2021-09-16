@@ -14,4 +14,9 @@ Installs Lunar Client `1.8` `.jar` files + `natives`.
 ```
 Updates the File Index. (`Index.txt`)
 
-<b>Note: `Index.txt` will be updated once the [Lunar Tweaks Patcher](https://github.com/RichardDorian/Lunar-Tweaks) becomes compatible with the latest version of Lunar Client.</b>
+```
+./LCLUpdaterLite -UpdateIndexLT
+```
+Updates the File Index to a [Lunar Tweaks Patcher](https://github.com/RichardDorian/Lunar-Tweaks) compatible Lunar Client patch. (`Index.txt`)
+
+<b>Note: `Index.txt` will be updated once the [Lunar Tweaks Patcher](https://github.com/RichardDorian/Lunar-Tweaks) becomes compatible with the latest patch of Lunar Client.</b>
