@@ -5,17 +5,17 @@ A lightweight Lunar Client Installer + Updater for LC `1.8`.
 
 <b>PowerShell:</b>
 ```
-./LCLUpdaterLite -Download
+./LCUpdaterLite -Download
 ```
 Installs Lunar Client `1.8` `.jar` files + `natives`.  
 
 ```
-./LCLUpdaterLite -UpdateIndex
+./LCUpdaterLite -UpdateIndex
 ```
 Updates the File Index. (`Index.txt`)
 
 ```
-./LCLUpdaterLite -UpdateIndexLT
+./LCUpdaterLite -UpdateIndexLT
 ```
 Updates the File Index to a [Lunar Tweaks Patcher](https://github.com/RichardDorian/Lunar-Tweaks) compatible Lunar Client patch. (`Index.txt`)
 
