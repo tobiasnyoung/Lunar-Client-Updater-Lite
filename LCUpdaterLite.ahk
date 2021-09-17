@@ -46,7 +46,7 @@ for n, param in A_Args  ; For each parameter:
 		Gui, New, -MinimizeBox -MaximizeBox
 		Gui, Add, Progress, w400 h20 vProgress cGreen +Smooth
 		Gui, Add, Text,w400 vStatus, 
-		Gui, Show,, Lunar Client Lite Updater - %LCVersion%
+		Gui, Show,, Lunar Client Updater Lite - %LCVersion%
 		
 		GuiControl,, Progress, +10
 		GuiControl, Text, Status, Downloading Lunar Client 1.8 vpatcher-prod.jar...
@@ -110,3 +110,6 @@ for n, param in A_Args  ; For each parameter:
 GuiClose(){
 	ExitApp
 }
+
+MsgBox, 64, Arguments, -Download: Downloads and installs Lunar Client 1.8 .jar files + natives.`n`n-UpdateIndex: Updates the File Index.`n`n-UpdateIndexLT: Updates the File Index to a Lunar Tweaks Patcher compatible LC patch.
+ExitApp
