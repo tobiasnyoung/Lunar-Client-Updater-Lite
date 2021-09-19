@@ -9,7 +9,7 @@ EnvGet, vHomePath, HOMEPATH
 UserProfile=% vHomeDrive vHomePath
 ;Index URLs
 
-Arguments := ["-Download", "-UpdateIndex", "-UpdateIndexLT"]
+Arguments := ["-Download", "-UpdateIndex"]
 for n, param in A_Args  ; For each parameter:
 {
 	
@@ -91,13 +91,6 @@ for n, param in A_Args  ; For each parameter:
 		ExitApp
 		
 	}
-
-	If (param = "-UpdateIndexLT"){
-		FileDelete, Index.txt
-		URLDownloadToFile, https://raw.githubusercontent.com/Aetopia/Lunar-Client-Updater-Lite/main/Index.txt, Index.txt
-		MsgBox, 64, Index Updated, Downloaded the latest index for Lunar Tweaks from Lunar Client Updater Lite's GitHub Repository., 2
-		ExitApp
-	}
 	
 	If (param = "-UpdateIndex") {
 		FileDelete, Index.txt
@@ -111,5 +104,6 @@ GuiClose(){
 	ExitApp
 }
 
-MsgBox, 64, Arguments, -Download: Downloads and installs Lunar Client 1.8 .jar files + natives.`n`n-UpdateIndex: Updates the File Index.`n`n-UpdateIndexLT: Updates the File Index to a Lunar Tweaks Patcher compatible LC patch.
+MsgBox, 64, Arguments, -Download: Downloads and installs Lunar Client 1.8 .jar files + natives.`n`n-UpdateIndex: Updates the File Index.
+Run, PowerShell.exe
 ExitApp
