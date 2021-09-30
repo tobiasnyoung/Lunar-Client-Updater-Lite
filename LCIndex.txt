@@ -6,7 +6,7 @@ aa8636376ac2e276695f7b7a3b88f25068443b9d
 df399a29ce49dc11cce82c1dacb763cf8c9f9a4c
 67f3f845f44f37279d01490b48dd957e2d19b9a3
 https://optifine.net/download?f=preview_OptiFine_1.8.9_HD_U_M6_pre1.jar
-999aaca
+e976b25
 
 vpatcher-prod.jar
 lunar-prod-optifine.jar
